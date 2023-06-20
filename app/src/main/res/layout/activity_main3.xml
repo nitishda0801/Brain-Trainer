@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hot_pot_back_ground"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="362dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="12dp"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:text="--Before starting training--"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="357dp"
+        android:layout_height="134dp"
+        android:padding="8dp"
+        android:text="3.If the answer clicked is correct it will highlighted by green colour otherwise clicked answer will turn red and correct answer will shown in green."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="355dp"
+        android:layout_height="112dp"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:text="1.The test you have clicked will show questions one by one.you just have to click on correct answer according to you. "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="362dp"
+        android:layout_height="125dp"
+        android:padding="8dp"
+        android:text="2.You will have Time seconds to answer each question,after that next question will displayed on screen.you can see timer for each question"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/t4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.419"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="357dp"
+        android:layout_height="45dp"
+        android:padding="8dp"
+        android:text="4.At the end of test you can see your score."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t4"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="229dp"
+        android:layout_height="90dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="472dp"
+        android:backgroundTint="#0099cc"
+        android:text="START "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonback"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787"
+        tools:ignore="UnknownId" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="324dp"
+        android:layout_height="57dp"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.916" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

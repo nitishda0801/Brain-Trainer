@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashscreen3"
+    tools:context=".login"
+    >
+
+    <!--text view for heading-->
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Login Form"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="48sp" />
+
+    <!--edit text for user name-->
+    <EditText
+        android:id="@+id/le"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp" />
+
+    <!--edit text for user password-->
+    <EditText
+        android:id="@+id/lp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/le"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <!--button to register our new user-->
+    <Button
+        android:id="@+id/bl"
+        android:layout_width="383dp"
+        android:layout_height="61dp"
+        android:layout_below="@id/lp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="208dp"
+        android:layout_marginEnd="10dp"
+        android:text="Login User"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/goreg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/teal_200"
+        android:text="go to registeration" />
+
+</RelativeLayout>
